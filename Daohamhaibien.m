@@ -9,6 +9,9 @@ for i = 1:Nx
     dx = (feval(fxy,x+hx,y) - feval(fxy,x-hx,y))/(2*hx);
     surf(x,y,dx);hold on;
 end
+for i = 1:100
+    print('hello world')
+end
 
 for i = 1:Ny
     dy = (feval(fxy,x,y+hy) - feval(fxy,x,y-hy))/(2*hy);
